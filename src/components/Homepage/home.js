@@ -1,11 +1,15 @@
 // import { useEffect } from 'react';
 // import { useSelector, useDispatch } from 'react-redux';
 //  import { fetchMission } from '../redux/Missions/Missions';
+import Filter from './Homeitems/Filter';
 
 const Home = () => {
-  const hi = 'hi';
+  const hi = 'find';
   return (
-    <h1>{hi}</h1>
+    <div className="container">
+      <Filter />
+      {hi}
+    </div>
   );
 };
 
