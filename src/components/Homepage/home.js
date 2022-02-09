@@ -1,6 +1,7 @@
 /* eslint-disable */
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchCases } from '../../redux/covidCases/cases';
 import Filter from './Homeitems/Filter';
 import Item from './Homeitems/Item';
@@ -34,6 +35,7 @@ const Home = () => {
           covidData.map((singledata) => {
             if (!singledata.filtered) {
               return (
+              //<Link to={`/details/${singledata.name}`}>
               <Item
                 key={singledata.id}
                 name={singledata.name}
@@ -44,6 +46,7 @@ const Home = () => {
                 dateDeaths={singledata.today_new_deaths}
                 filtered={singledata.filtered}
               />
+              //</Link>
             )
             }
             })
