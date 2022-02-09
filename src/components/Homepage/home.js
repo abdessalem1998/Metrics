@@ -35,9 +35,14 @@ const Home = () => {
           covidData.map((singledata) => {
             if (!singledata.filtered) {
               return (
-              //<Link to={`/details/${singledata.name}`}>
+              <Link
+              key={singledata.id}
+              className="col-6 border"
+              state={singledata}
+              to={`/details/${singledata.name}`}
+              style={{ textDecoration: 'none',color:'black' }}
+              >
               <Item
-                key={singledata.id}
                 name={singledata.name}
                 date={singledata.date}
                 totalConfirmed={singledata.today_confirmed}
@@ -46,7 +51,7 @@ const Home = () => {
                 dateDeaths={singledata.today_new_deaths}
                 filtered={singledata.filtered}
               />
-              //</Link>
+              </Link>
             )
             }
             })
