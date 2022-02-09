@@ -1,9 +1,11 @@
 /* eslint-disable */
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { fetchCases } from '../../redux/covidCases/cases';
 import Filter from './Homeitems/Filter';
 import Item from './Homeitems/Item';
+import Nav from '../Nav';
 
 const Home = () => {
   const covidData = useSelector((state) => state.covidReducer);
@@ -29,13 +31,20 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row">
+        <Nav />
         <Filter />
         {
           covidData.map((singledata) => {
             if (!singledata.filtered) {
               return (
+              <Link
+              key={singledata.id}
+              className="col-6 border"
+              state={singledata}
+              to={`/details/${singledata.name}`}
+              style={{ textDecoration: 'none',color:'black' }}
+              >
               <Item
-                key={singledata.id}
                 name={singledata.name}
                 date={singledata.date}
                 totalConfirmed={singledata.today_confirmed}
@@ -44,6 +53,7 @@ const Home = () => {
                 dateDeaths={singledata.today_new_deaths}
                 filtered={singledata.filtered}
               />
+              </Link>
             )
             }
             })
