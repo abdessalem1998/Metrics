@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { fetchCases } from '../../redux/covidCases/cases';
 import Filter from './Homeitems/Filter';
 import Item from './Homeitems/Item';
+import Nav from '../Nav';
 
 const Home = () => {
   const covidData = useSelector((state) => state.covidReducer);
@@ -30,6 +31,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row">
+        <Nav />
         <Filter />
         {
           covidData.map((singledata) => {

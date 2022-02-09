@@ -2,6 +2,7 @@
 import { useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCases } from '../../redux/covidCases/cases';
+import Nav from '../Nav';
 
 const Details = () => {
   const location = useLocation();
@@ -11,6 +12,7 @@ const Details = () => {
   console.log(singleData.regions);
   return (
     <>
+    <Nav />
     <div className="row border">
       <h3>{singleData.name}</h3>
       <p>Total confirmed cases: {singleData.today_confirmed}</p>
