@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchCases } from '../../redux/covidCases/cases';
@@ -11,8 +11,10 @@ const Home = () => {
   const covidData = useSelector((state) => state.covidReducer);
   const dispatch = useDispatch();
 
+  const [worldData, setWorldData] = useState(0);
+
   const today = new Date().toISOString().slice(0, 10);
-  // const today = '2022-02-08';
+
   const URL = 'https://api.covid19tracking.narrativa.com/api';
 
   const fetchData = async () => {
@@ -21,6 +23,8 @@ const Home = () => {
     });
     const jsonRespnse = await response.json();
     const neededData = jsonRespnse.dates[`${today}`].countries;
+    //console.log(jsonRespnse.total);
+    setWorldData(jsonRespnse.total);
     dispatch(fetchCases(Object.values(neededData)));
   };
 
@@ -32,7 +36,7 @@ const Home = () => {
     <div className="container-fluid">
       <div className="row">
         <Nav year="2022" title="Whole World Data"/>
-        <Filter />
+        <Filter data={worldData}/>
         {
           covidData.map((singledata) => {
             if (!singledata.filtered) {
