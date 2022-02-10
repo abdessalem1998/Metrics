@@ -1,7 +1,6 @@
 import reducer from './cases';
 
 describe('unit tests for pure functions in the Redux code', () => {
-
   test('default case', () => {
     // Arrange
     const state = [];
@@ -30,11 +29,11 @@ describe('unit tests for pure functions in the Redux code', () => {
         confirmedCases: 2000,
         id: 'country2',
         name: 'country2',
-      }
-    ]
+      },
+    ];
     const action = {
       type: FETCH_CASES,
-      payload
+      payload,
     };
 
     // Act
@@ -56,13 +55,13 @@ describe('unit tests for pure functions in the Redux code', () => {
         confirmedCases: 2000,
         id: 'country2',
         name: 'country2',
-      }
+      },
     ];
     const FILTER_CASES_NAME = 'metrics/covidCases/FETCH_FILTER_CASES_NAME';
-    const payload = 'country1'
+    const payload = 'country1';
     const action = {
       type: FILTER_CASES_NAME,
-      payload
+      payload,
     };
 
     // Act
@@ -74,14 +73,14 @@ describe('unit tests for pure functions in the Redux code', () => {
         confirmedCases: 1000,
         id: 'country1',
         name: 'country1',
-        filtered: false
+        filtered: false,
       },
       {
         confirmedCases: 2000,
         id: 'country2',
         name: 'country2',
-        filtered: true
-      }
+        filtered: true,
+      },
     ];
     expect(result).toStrictEqual(output);
   });
