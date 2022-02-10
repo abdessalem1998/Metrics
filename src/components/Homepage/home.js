@@ -11,8 +11,8 @@ const Home = () => {
   const covidData = useSelector((state) => state.covidReducer);
   const dispatch = useDispatch();
 
-  // const today = new Date().toISOString().slice(0, 10);
-  const today = '2022-02-08';
+  const today = new Date().toISOString().slice(0, 10);
+  // const today = '2022-02-08';
   const URL = 'https://api.covid19tracking.narrativa.com/api';
 
   const fetchData = async () => {
@@ -29,9 +29,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
-        <Nav />
+        <Nav year="2022" title="Whole World Data"/>
         <Filter />
         {
           covidData.map((singledata) => {
