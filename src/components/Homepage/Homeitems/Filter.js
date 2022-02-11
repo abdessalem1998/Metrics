@@ -11,7 +11,7 @@ const Filter = (data) => {
     dispatch(filterCasesByName(e));
   };
   return (
-    <div className="input-group mb-5 text-center text-white" style={{backgroundColor:'#FC5193',height:'250px'}}>
+    <div className="input-group mb-5 text-center text-white" style={{height:'250px'}}>
     <div className="col-6 d-flex align-items-center" style={{backgroundImage: `url(${world})`,backgroundSize: '100%'}}>
       <input type="text" onChange={(e) => filterHandler(e.target.value)} className="form-control border border-white" placeholder="Find ..." />
     </div>
