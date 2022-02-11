@@ -75,7 +75,7 @@ const Home = () => {
                     style={{ textDecoration: 'none' }}
                   >
                     <div className="row">
-                      <div className="col-4" style={{ backgroundImage: `url(${covid})`, backgroundRepeat: 'no-repeat', backgroundSize: '60%' }} />
+                      <div className="col-2" style={{ backgroundImage: `url(${covid})`, backgroundRepeat: 'no-repeat', backgroundSize: '60%' }} />
                       <Item
                         name={singledata.name}
                         date={singledata.date}

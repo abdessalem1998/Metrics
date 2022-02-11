@@ -1,6 +1,6 @@
 /* eslint-disable react/destructuring-assignment */
 const Item = (singledata) => (
-  <div className="col-8 text-center p-3">
+  <div className="col-10 text-center p-3">
     <h3><b>{singledata.name}</b></h3>
     <p>
       Total confirmed cases:
