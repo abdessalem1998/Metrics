@@ -1,10 +1,36 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Metrics Covid-19 webapp 
 
-## Available Scripts
+> This project is a web app created using React and Redux framework and bootstrap5, for displaying real statistics about covid 19 around the world. The application will allow users to browser the whole world data and specific country data and even regions in country.
+
+![image](https://user-images.githubusercontent.com/89970442/153585109-c8e1b0b4-2170-4cf9-9ea6-6698a2016ed9.png)
+
+![image](https://user-images.githubusercontent.com/89970442/153585198-0c43574d-38f2-4172-b36b-746a1fb1a274.png)
+
+![image](https://user-images.githubusercontent.com/89970442/153585311-1f53bf61-79f1-4900-967b-92f3c5f96051.png)
+
+
+## Built With
+
+- React and Redux
+- Bootstrap 5
+
+## Live Demo
+
+[Check the demo here](https://covid-react-apps.herokuapp.com/)
+
+## Setup
+Go to the top of the page, press te green button that says "Code", and copy the link. Then you have to go to your console and type
+git clone 'repository-link'  
+That's all, you are ready to go!
+
+## Getting Started
 
 In the project directory, you can run:
+
+### `npm install`
+install Node Modules.
 
 ### `npm start`
 
@@ -39,32 +65,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@abdessalem1998](https://https://github.com/abdessalem1998.com/rdnrn)
+- Twitter: [HAbdssalem](https://twitter.com/HAbdssalem)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
 
-### Code Splitting
+- This design inspired by Nelson Sakwa on Behance.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
