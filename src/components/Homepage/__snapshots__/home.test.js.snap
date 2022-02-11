@@ -109,28 +109,27 @@ Object {
             <div
               class="col-6 "
             >
-              <h2 />
               <h2>
                 World Cases 
               </h2>
               <p>
                 <b>
-                  Total confirmed cases: 
+                  Total confirmed cases:
                 </b>
               </p>
               <p>
                 <b>
-                  Total deaths: 
+                  Total deaths:
                 </b>
               </p>
               <p>
                 <b>
-                   cases: 
+                  cases:
                 </b>
               </p>
               <p>
                 <b>
-                   deaths: 
+                  deaths:
                 </b>
               </p>
             </div>
@@ -252,28 +251,27 @@ Object {
           <div
             class="col-6 "
           >
-            <h2 />
             <h2>
               World Cases 
             </h2>
             <p>
               <b>
-                Total confirmed cases: 
+                Total confirmed cases:
               </b>
             </p>
             <p>
               <b>
-                Total deaths: 
+                Total deaths:
               </b>
             </p>
             <p>
               <b>
-                 cases: 
+                cases:
               </b>
             </p>
             <p>
               <b>
-                 deaths: 
+                deaths:
               </b>
             </p>
           </div>
